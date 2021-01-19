@@ -112,3 +112,16 @@ This method will invalidate your current tokens and delete the token-cookies.
 #### `$auth.refresh()`
 
 If for some reason you need to manually refresh the stored tokens, you can use this method to do so. It will request a new set of tokens and adjust the refresh-interval accordingly.
+
+#### `$auth.user`
+
+nuxt-directus retrieves the user-object after login and stores it in vuex. To get a reference to the current user, you can use this getter (will return null, if no user is logged in).
+
+```Vue
+<div v-if="$auth.user">
+  <p>Some secret stuff</p>
+</div>
+<div v-else>
+  <p>Public stuff</p>
+</div>
+```
