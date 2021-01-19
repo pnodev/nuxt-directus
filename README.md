@@ -10,7 +10,7 @@ A [Nuxt](https://nuxtjs.org/) module for integrating the [Directus](https://dire
 
 ## Who is this for?
 
-This module integrates the [Directus](https://directus.io/) API into your [Nuxt](https://nuxtjs.org/) project and exposes the [Directus JavaScript SDK](https://docs.directus.io/reference/sdk-js.html) under `$directus`. Furthermore, it comes with a complete, ready-to-use authentication middleware that requires minimal configuration.
+This module integrates the [Directus](https://directus.io/) API into your [Nuxt](https://nuxtjs.org/) project and exposes the [Directus JavaScript SDK](https://docs.directus.io/reference/sdk-js.html) under `$directus`. Furthermore, it comes with a complete, ready-to-use authentication middleware that requires minimal configuration. If you are looking for a ready-to-use solution for using Nuxt with Directus, this might be for you.
 
 ## Installation
 
