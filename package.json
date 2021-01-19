@@ -1,0 +1,37 @@
+{
+  "name": "@pnodev/nuxt-directus",
+  "version": "0.1.0",
+  "description": "A Nuxt module for integrating the Directus API (including an authentication middleware)",
+  "main": "lib/module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "lint-staged": {
+    "*.{js}": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnodev/nuxt-directus.git"
+  },
+  "keywords": [
+    "nuxt",
+    "directus",
+    "module",
+    "auth",
+    "api"
+  ],
+  "author": "Philipp Nowinski <mail@pno.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnodev/nuxt-directus/issues"
+  },
+  "homepage": "https://github.com/pnodev/nuxt-directus#readme"
+}
