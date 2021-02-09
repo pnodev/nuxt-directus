@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "@directus/sdk-js": "^9.0.0-rc.30",
+    "axios-auth-refresh": "^3.1.0",
     "jwt-decode": "^3.1.2"
   }
 }
