@@ -1,7 +1,7 @@
 # nuxt-directus
 
 A [Nuxt](https://nuxtjs.org/) module for integrating the [Directus](https://directus.io/) API (including an authentication middleware)
-
+Updated to use the REAL directus sdk
 ---
 
 [![MIT license](https://img.shields.io/github/license/pnodev/nuxt-directus.svg)](https://github.com/pnodev/nuxt-directus/blob/master/LICENSE)
