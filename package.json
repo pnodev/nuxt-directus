@@ -1,6 +1,6 @@
 {
   "name": "@pnodev/nuxt-directus",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Nuxt module for integrating the Directus API (including an authentication middleware)",
   "main": "lib/module.js",
   "scripts": {
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pnodev/nuxt-directus.git"
+    "url": "git@github.com:LangPressBlog/nuxt-directus.git"
   },
   "keywords": [
     "nuxt",
@@ -28,9 +28,14 @@
   "author": "Philipp Nowinski <mail@pno.dev>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pnodev/nuxt-directus/issues"
+    "url": "https://github.com/LangPressBlog/nuxt-directus/issues"
   },
-  "homepage": "https://github.com/pnodev/nuxt-directus#readme",
+  "homepage": "https://github.com/LangPressBlog/nuxt-directus#readme",
+  "dependencies": {
+    "@directus/sdk": "^9.0.0-rc.83",
+    "axios-auth-refresh": "^3.1.0",
+    "jwt-decode": "^3.1.2"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -43,10 +48,5 @@
     "eslint-plugin-prettier": "^3.1.4",
     "lint-staged": "^10.4.0",
     "prettier": "^2.1.2"
-  },
-  "dependencies": {
-    "@directus/sdk": "^9.0.0-rc.83",
-    "axios-auth-refresh": "^3.1.0",
-    "jwt-decode": "^3.1.2"
   }
 }
