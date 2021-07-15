@@ -61,11 +61,8 @@ router: {
 
 directus: {
   apiUrl: 'https://api.acme.net', // your API URL
-  accessTokenCookieName: 'directus_access_token', // the name of the cookie the access_token will be saved in
-  refreshTokenCookieName: 'directus_refresh_token', // the name of the cookie the refresh_token will be saved in
-  loginRoute: '/login', // the route containing your login-form
-  homeRoute: '/', // the route the user will be redirected to after authentication
-  hideLoginWhenAuthenticated: true, // when set to true, authenticated users will be redirected to homeRoute, when accessing loginRoute
+  accessTokenCookieName: 'access_token', // the name of the cookie the access_token will be saved in
+  refreshTokenCookieName: 'refresh_token', // the name of the cookie the refresh_token will be saved in
 }
 ```
 
