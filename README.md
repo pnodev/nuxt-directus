@@ -10,7 +10,7 @@ A [Nuxt](https://nuxtjs.org/) module for integrating the [Directus](https://dire
 
 ## Who is this for?
 
-This module integrates the [Directus](https://directus.io/) API into your [Nuxt](https://nuxtjs.org/) project and exposes the [Directus JavaScript SDK](https://docs.directus.io/reference/sdk-js.html) under `$directus`. Furthermore, it comes with a complete, ready-to-use authentication middleware that requires minimal configuration. If you are looking for a ready-to-use solution for using Nuxt with Directus, this might be for you.
+This module integrates the [Directus](https://directus.io/) API into your [Nuxt](https://nuxtjs.org/) project and exposes the [Directus JavaScript SDK](https://docs.directus.io/reference/sdk/) under `$directus`. Furthermore, it comes with a complete, ready-to-use authentication middleware that requires minimal configuration. If you are looking for a ready-to-use solution for using Nuxt with Directus, this might be for you.
 
 ## Installation
 
@@ -61,11 +61,8 @@ router: {
 
 directus: {
   apiUrl: 'https://api.acme.net', // your API URL
-  accessTokenCookieName: 'directus_access_token', // the name of the cookie the access_token will be saved in
-  refreshTokenCookieName: 'directus_refresh_token', // the name of the cookie the refresh_token will be saved in
-  loginRoute: '/login', // the route containing your login-form
-  homeRoute: '/', // the route the user will be redirected to after authentication
-  hideLoginWhenAuthenticated: true, // when set to true, authenticated users will be redirected to homeRoute, when accessing loginRoute
+  accessTokenCookieName: 'access_token', // the name of the cookie the access_token will be saved in
+  refreshTokenCookieName: 'refresh_token', // the name of the cookie the refresh_token will be saved in
 }
 ```
 
@@ -75,7 +72,7 @@ This module will expose two new APIs on your context object: `$directus` and `$a
 
 ### `$directus`
 
-You can directly access a pre-configured instance of the [Directus SDK](https://docs.directus.io/reference/sdk-js.html) through `this.$directus`.
+You can directly access a pre-configured instance of the [Directus SDK](https://docs.directus.io/reference/sdk/) through `this.$directus`.
 
 ### `$auth`
 

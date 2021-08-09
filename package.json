@@ -1,6 +1,6 @@
 {
   "name": "@pnodev/nuxt-directus",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A Nuxt module for integrating the Directus API (including an authentication middleware)",
   "main": "lib/module.js",
   "scripts": {
@@ -52,7 +52,7 @@
     "prettier": "^2.1.2"
   },
   "dependencies": {
-    "@directus/sdk-js": "^9.0.0-rc.30",
+    "@directus/sdk": "^9.0.0-rc.83",
     "axios-auth-refresh": "^3.1.0",
     "jwt-decode": "^3.1.2"
   }
